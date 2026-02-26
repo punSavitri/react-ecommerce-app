@@ -4,8 +4,9 @@ import logo from "../assets/logo.png";
 import cart_icon from "../assets/cart_icon.png";
 
 const Navbar = () => {
-  //define state variables
+  //define state variables for hamburger nav menu
   const [menuOpen, setMenuOpen] = useState(false);
+
 
   return (
     <>
@@ -24,7 +25,7 @@ const Navbar = () => {
         </ul>
         <div className="nav-login-cart">
           <button>Login</button>
-          <img src={cart_icon} alt="image of shopping cart" />
+          <img src={cart_icon} alt="img of shopping cart" />
           <div className="nav-cart-count">0</div>
         </div>
         {/* Hamburger Icon */}
