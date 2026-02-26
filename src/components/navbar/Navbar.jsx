@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../assets/logo.png";
 import cart_icon from "../assets/cart_icon.png";
 
 const Navbar = () => {
+  //define state variables
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       <div className="navbar">
@@ -11,7 +14,9 @@ const Navbar = () => {
           <img src={logo} alt="brand logo" />
           <p>HELLO🤍SHOPPER</p>
         </div>
-        <ul className="nav-menu">
+        
+        {/* Menu */}
+        <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
           <li>Shop</li>
           <li>Men</li>
           <li>Women</li>
@@ -20,7 +25,13 @@ const Navbar = () => {
         <div className="nav-login-cart">
           <button>Login</button>
           <img src={cart_icon} alt="image of shopping cart" />
-          <dic className="nav-cart-count">0</dic>
+          <div className="nav-cart-count">0</div>
+        </div>
+        {/* Hamburger Icon */}
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </>

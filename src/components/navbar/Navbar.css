@@ -1,0 +1,130 @@
+/* main navbar */
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  position: relative;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo img {
+  width: 50px;
+}
+.nav-logo p {
+  color: #171717;
+  font-size: 38px;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  color: #626262;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.nav-menu li {
+  cursor: pointer;
+  font-size: 18px;
+}
+.nav-menu hr {
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 3px;
+  background-color: #292525;
+}
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-login-cart button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background: black;
+  cursor: pointer;
+}
+/* Adding click effect on login button */
+.nav-login-cart button:active {
+  background-color: #737373;
+}
+
+.nav-cart-count {
+  margin-top: -35px;
+  margin-left: -15px;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+}
+/* mobile responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .nav-logo p {
+    margin-right: 10px;
+    color: #171717;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: white;
+    width: 200px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  .nav-menu.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  .nav-login-cart {
+    gap: 10px;
+    margin-left: 40px;
+  }
+  .nav-login-cart button {
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
