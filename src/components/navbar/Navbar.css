@@ -41,7 +41,7 @@
   border: none;
   border-radius: 10px;
   width: 80%;
-  height: 3px;
+  height: 2px;
   background-color: #292525;
 }
 .nav-login-cart {
@@ -72,13 +72,13 @@
   color: white;
 }
 /* Hamburger Icon */
-.hamburger {
+.hamburger-menu {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
 }
-.hamburger span {
+.hamburger-menu span {
   width: 28px;
   height: 3px;
   background: black;
@@ -113,7 +113,7 @@
     transform: translateX(0);
     opacity: 1;
   }
-  .hamburger {
+  .hamburger-menu {
     display: flex;
     justify-content: center;
     margin-left: 10px;
