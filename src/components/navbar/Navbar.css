@@ -63,12 +63,12 @@
 }
 
 .nav-cart-count {
-  margin-top: -35px;
-  margin-left: -15px;
+  margin-top: -50px;
+  margin-left: -40px;
   padding: 2px 8px;
   border-radius: 50%;
   font-size: 14px;
-  background: red;
+  background: black;
   color: white;
 }
 /* Hamburger Icon */
