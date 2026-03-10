@@ -31,7 +31,7 @@ const CartItems = () => {
                 </button>
                 <p>${e.new_price * cartItems[e.id]}</p>
                 <img
-                className="cartitems-remove-icon"
+                  className="cartitems-remove-icon"
                   src={remove_icon}
                   alt=""
                   onClick={() => {
@@ -47,7 +47,7 @@ const CartItems = () => {
       })}
       <div className="cartitems-down">
         <div className="cartitems-total">
-          <h1>Cart Totals</h1>
+          <h1>Shopping Cart Totals</h1>
           <div>
             <div className="cartitems-total-item">
               <p>Subtotal</p>
@@ -64,7 +64,7 @@ const CartItems = () => {
               <h3>${0}</h3>
             </div>
           </div>
-          <button>Proceed to Chekout</button>
+          <button>Proceed to Checkout</button>
         </div>
         <div className="cartitems-promocode">
           <p>If you have a promo code, please enter it here</p>
