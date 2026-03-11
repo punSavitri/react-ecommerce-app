@@ -64,26 +64,14 @@
 
 .nav-cart-count {
   margin-top: -50px;
-  margin-left: -40px;
+  margin-left: -35px;
   padding: 2px 8px;
   border-radius: 50%;
   font-size: 14px;
   background: black;
   color: white;
 }
-/* Hamburger Icon */
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-.hamburger-menu span {
-  width: 28px;
-  height: 3px;
-  background: black;
-  border-radius: 5px;
-}
+
 /* mobile responsive */
 @media (max-width: 768px) {
   .navbar {
@@ -109,15 +97,11 @@
     transform: translateX(100%);
     opacity: 1;
   }
-  .nav-menu.active {
+  /* .nav-menu.active {
     transform: translateX(0);
     opacity: 1;
   }
-  .hamburger-menu {
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
-  }
+   */
   .nav-login-cart {
     gap: 10px;
     margin-left: 40px;
