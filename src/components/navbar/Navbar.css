@@ -51,6 +51,7 @@
 }
 .nav-login-cart button {
   padding: 8px 20px;
+  width: 100px;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -59,7 +60,7 @@
 }
 /* Adding click effect on login button */
 .nav-login-cart button:active {
-  background-color: #737373;
+  background: #888;
 }
 
 .nav-cart-count {
@@ -70,45 +71,4 @@
   font-size: 14px;
   background: black;
   color: white;
-}
-
-/* mobile responsive */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 20px;
-  }
-  .nav-logo p {
-    margin-right: 10px;
-    color: #171717;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .nav-menu {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    background: white;
-    width: 200px;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-    transform: translateX(100%);
-    opacity: 1;
-  }
-  /* .nav-menu.active {
-    transform: translateX(0);
-    opacity: 1;
-  }
-   */
-  .nav-login-cart {
-    gap: 10px;
-    margin-left: 40px;
-  }
-  .nav-login-cart button {
-    padding: 10px 10px;
-    font-size: 14px;
-    font-weight: 600;
-  }
 }

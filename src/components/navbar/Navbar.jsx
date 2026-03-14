@@ -15,7 +15,7 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="nav-logo">
-          <img src={logo} alt="brand logo" />
+          <img src={logo} alt="brand logo" className="brand-logo" />
           <p>HELLO🤍SHOPPER</p>
         </div>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           </Link>
           <Link to="/cart">
             {" "}
-            <img src={cart_icon} alt="img of shopping cart" />
+            <img src={cart_icon} alt="img of shopping cart" className="cart_icon"/>
           </Link>
 
           <div className="nav-cart-count">{getTotalCartItems()}</div>

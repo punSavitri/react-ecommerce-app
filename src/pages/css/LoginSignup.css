@@ -4,7 +4,7 @@
   padding-top: 50px;
 }
 .loginsignup-container {
-  max-width: 400px;
+  max-width: 500px;
   height: 500px;
   border: 1px solid #f8f4f1;
   background: #fff;
@@ -31,10 +31,10 @@
   font-size: 18px;
 }
 
-.loginsignup-container button {
+.loginsignup button {
   display: block;
   margin: 20px auto;
-  width: 430px;
+  width: 380px;
   font-size: 20px;
   font-weight: 800;
   padding: 10px 20px;
@@ -50,7 +50,7 @@
   font-weight: 500;
 }
 .loginsignup-login span {
-    font-weight: 800;
+  font-weight: 800;
 }
 .loginsignup-agree {
   display: flex;
