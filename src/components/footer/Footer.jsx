@@ -32,21 +32,29 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <p>
-          This project was coded by {""}
+          This project was developed by {""}
           <a
             href="https://github.com/punSavitri"
             target="_blank"
             rel="noreferrer"
           >
-            Savitri Pun
+            Savitri Pun,
           </a>{" "}
-          and{" "}
+          available on{" "}
           <a
             href="https://github.com/punSavitri/react-ecommerce-app.git"
             target="_blank"
             rel="noreferrer"
           >
-            is opend sourced on Github
+            as open-source on Github
+          </a>{" "}
+          and deployed using{" "}
+          <a
+            href="https://reactecommerceapp.savitripun.co.uk/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Hostinger platform
           </a>
         </p>
       </div>
